@@ -7,7 +7,8 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 sense.rb
+badd +1 sense.rb
+badd +1 Gemfile
 argglobal
 silent! argdel *
 argadd sense.rb
