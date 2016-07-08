@@ -7,12 +7,12 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 sense.rb
-badd +1 Gemfile
+badd +11 sense.rb
+badd +3 Gemfile
 argglobal
 silent! argdel *
 argadd sense.rb
-edit sense.rb
+edit Gemfile
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
