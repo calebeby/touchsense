@@ -32,6 +32,9 @@ pin.off
 loop do
   puts "Please type something"
   something = gets.chomp.downcase
+  if something == 'goodbye'
+    break
+  end
 
   something.each_char do |letter|
     if letter == " "
